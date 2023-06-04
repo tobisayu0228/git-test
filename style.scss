@@ -77,7 +77,7 @@ img {
             font-weight: bold;
         }
     }
-    .hamburger {
+    .openbtn {
         display: none;
     }
     nav {
@@ -235,6 +235,51 @@ img {
             align-items: center;
             .site-title {
                 font-size: 24px;
+            }
+        }
+        .openbtn {
+            position: relative;
+            display: block;
+            background-color: #FFDB94;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            span {
+                display: inline-block;
+                transition: all .4s;
+                position: absolute;
+                left: 8px;
+                height: 2px;
+                border-radius: 2px;
+                background: #000;
+                width: 45%;
+                &:nth-of-type(1) {
+                    top:9px;	
+                }
+                &:nth-of-type(2) {
+                    top:14px;
+                }
+                &:nth-of-type(3) {
+                    top: 19px;
+                }
+            }
+            &.active span {
+                &:nth-of-type(1) {
+                    top: 9px;
+                    left: 6px;
+                    transform: translateY(5px) rotate(-45deg);
+                    width: 54%;
+                }
+                &:nth-of-type(2) {
+                    opacity: 0;/*真ん中の線は透過*/
+                }
+                &:nth-of-type(3){
+                    top: 18px;
+                    left: 6px;
+                    transform: translateY(-5px) rotate(45deg);
+                    width: 54%;
+                }
             }
         }
         nav {

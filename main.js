@@ -1,5 +1,8 @@
 if (window.matchMedia('(max-width: 375px)').matches) {
     //スマホ処理
+    $(".openbtn").click(function () {
+      $(this).toggleClass('active');
+  });
 
     // ハンバーガーメニュー
 } else {
