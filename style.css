@@ -275,9 +275,6 @@ img {
     height: auto;
     width: auto;
     border-radius: 0%;
-    transition: none;
-    transform: translateY(0px);
-    opacity: 1;
     line-height: 1.5rem;
     display: block;
     text-align: center;
